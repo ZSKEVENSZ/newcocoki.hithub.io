@@ -1,0 +1,97 @@
+body {
+    background-color: #6B4423;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #8B5A2B;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color: #228B22;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #B22222;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.container {
+    background-color: white;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(117, 68, 11, 0.39);
+    text-align: center;
+    width: 300px;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px 1px;
+    margin: 10px 0;
+    background-color: #072091c7;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff0000cc;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8B5A2B;
+    position: fixed;
+    bottom: 0;
+    height: 3%;
+    width: 100%;
+    color: white;
+}

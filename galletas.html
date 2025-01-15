@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>co^coki</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>galletas</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="contactanos.html">Contáctenos</a></li>
+
+            </ul>
+        </nav>
+        <div id="cart-icon" class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+    <main>
+        <center><h2>nuestras galletas</h2></center>
+        <section class="productos">
+            <div class="producto" data-id="1">
+                <img src="galletas1.png" alt="Comida 1">
+                <h4>galletas con chips de chocolates</h4>
+                <p>$25.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="2">
+                <img src="galletas2.png" alt="Comida 2">
+                <h4>galletas maria</h4>
+                <p>$30.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3">
+                <img src="galletas3.png" alt="Comida 3">
+                <h4>galletas de chocolate</h4>
+                <p>$18.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3">
+                <img src="galletas4.png" alt="Comida 3">
+                <h4>galletas con chispas de colores</h4>
+                <p>$10.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3">
+                <img src="galletas5.png" alt="Comida 3">
+                <h4>polvorones</h4>
+                <p>$15.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3">
+                <img src="galletas6.png" alt="Comida 3">
+                <h4>galletas de canela</h4>
+                <p>$20.00</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h3>Carrito de Compras</h3>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
+            <button onclick="clearCart()">Vaciar carrito</button>
+            <button onclick="checkout()">Comprar</button>
+            <button onclick="toggleCart()">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ticket-container" class="cart-modal" style="display: none;">
+        <div class="cart-content">
+            <h3>Ticket de Compra</h3>
+            <div id="ticket-items"></div>
+            <div id="ticket-total">
+                <p id="ticket-total-price"></p>
+            </div>
+            <button onclick="closeTicket()">Cerrar</button>
+        </div>
+    </div>
+
+</body>
+</html>
